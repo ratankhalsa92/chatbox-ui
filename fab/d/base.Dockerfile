@@ -1,5 +1,10 @@
 FROM node:12
 
+COPY . /src
+WORKDIR /src
+
+RUN yarn install;
+
 #Use an entrypoint that simply lists out all commands sent to it
 COPY fab/entryPoint.sh /entryPoint.sh
 ENTRYPOINT ["/entryPoint.sh"]
