@@ -39,7 +39,6 @@
     "@storybook/react": "^5.3.18",
     "@types/lodash": "^4.14.150",
     "@types/react-dom": "^16.9.7",
-    "@types/storybook__react": "^5.2.1",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-import": "^1.13.0",
