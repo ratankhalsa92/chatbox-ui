@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  chatbox-ui:
+    image: "gmetrixr/chatbox-ui:base"
+    container_name: gmetrixr_chatbox-ui
+    ports:
+      - "3700:3700"
+    volumes:
+      - .:/src
+    command: ["sleep", "inf"]
+    privileged: true
+
+networks:
+  default:
+    external:
+      name: gmetrixr
