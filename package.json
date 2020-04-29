@@ -9,9 +9,15 @@
   "scripts": {
     "watch": "start-storybook -p 3700 --ci",
     "build": "rm -rf build; mkdir -p build; build-storybook -o build",
+<<<<<<< HEAD
     "bundle": "yarn bundle:version && yarn bundle:publish",
     "bundle:version": "N=$(node -p \"require('./package.json').name\") && yarn version --patch --message \"v%s: $N autotagged\"",
     "bundle:publish": "V=$(node -p \"require('./package.json').version\") && yarn publish --new-version $V --access public"
+=======
+    "bundle": "yarn publish:version && yarn publish:npm",
+    "publish:version": "N=$(node -p \"require('./package.json').name\") && yarn version --patch --message \"v%s: $N autotagged\" && git push",
+    "publish:npm": "V=$(node -p \"require('./package.json').version\") && yarn publish --new-version $V --access public"
+>>>>>>> new publish
   },
   "dependencies": {
     "http-server": "^0.12.1",
