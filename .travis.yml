@@ -4,10 +4,10 @@ branches:
 language: node_js
 node_js:
   - stable
-cache:
-  directories:
-    - node_modules
+#cache:
+#  directories:
+#   - node_modules
 install:
-  - yarn install --production
+  - yarn install
 script:
   - yarn build
