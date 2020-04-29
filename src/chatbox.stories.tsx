@@ -3,7 +3,7 @@ import React from 'react';
 import './chatbox.scss';
 
 const App = () => {
-  return <div>Modify this code to see your component</div>;
+  return <div>This is where your code goes</div>;
 };
 
 storiesOf('Chatbox', module).add('chatbox', () => <App />);
