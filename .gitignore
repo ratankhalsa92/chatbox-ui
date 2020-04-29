@@ -68,3 +68,5 @@ build/
 
 # ESlint coverage files
 coverage.eslint
+
+.cache/
