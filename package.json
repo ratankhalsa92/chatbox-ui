@@ -34,7 +34,6 @@
     "@babel/preset-typescript": "^7.9.0",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-backgrounds": "^5.3.18",
-    "@storybook/addon-links": "^5.3.18",
     "@storybook/addon-viewport": "^5.3.18",
     "@storybook/addons": "^5.3.18",
     "@storybook/cli": "^5.3.18",
