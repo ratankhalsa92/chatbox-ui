@@ -9,7 +9,7 @@
   "scripts": {
     "watch": "start-storybook -p 3700 --ci",
     "build": "rm -rf build; mkdir -p build; build-storybook -o build",
-    "bundle:publish": "V=$(node -p \"require('./package.json').version\") && yarn publish --new-version $V"
+    "bundle:publish": "V=$(node -p \"require('./package.json').version\") && yarn publish --new-version $V --access public"
   },
   "dependencies": {
     "http-server": "^0.12.1",
